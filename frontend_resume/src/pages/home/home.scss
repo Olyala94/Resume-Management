@@ -1,0 +1,28 @@
+.home {
+    h3 {
+      transition: color 0.3s; /* Renk değişimine geçiş efekti */
+      cursor: pointer;
+    }
+  
+    h3:hover {
+      color: #4CAF50; /* Yeşil rengin HEX kodu */
+    }
+  }.content.home {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h3 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  span {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+  }
+  

@@ -1,0 +1,57 @@
+
+@import"../../mixins";
+
+
+.jobs {
+    .heading {
+        @include d-flex(row, space-between, center);
+        width: 100%;
+    }
+}
+
+.add-job {
+    width: 500px;
+    max-width: 100%;
+    @include d-flex(column, flex-start, center);
+    gap: 1rem;
+
+    * {
+        color: var(--text-color1);
+    }
+}/* companies.scss */
+
+.content.jobs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+  
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  Button {
+    background-color: #2196f3; /* Örneğin MUI'deki önerilen renk */
+    color: #fff;
+    &:hover {
+      background-color: #1565c0; /* Hover rengi */
+    }
+  }
+
+
+
+ 
+  

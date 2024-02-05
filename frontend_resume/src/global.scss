@@ -1,0 +1,73 @@
+@import "./mixins";
+
+*,
+*::before,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+// :root {
+//     --blue: #4864ff;
+//     --bg-color: #fff;
+//     --text-color: #000;  /* <-- Bu değeri güncelledim */
+//     --text-color2: #555;
+// }
+:root {
+    --green: #096b28;  /* Varsayılan mavi renk */
+    --dark-blue: #002b5c;  /* Siyah modunda kullanılacak mavi renk */
+    --bg-color: #fff;
+    --text-color: #000;
+    --text-color2: #555;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 2rem;
+    min-height: calc(100vh - 60px);
+}
+
+.content {
+    @include d-flex(column, flex-start, center);
+    gap: 2rem;
+}
+
+.app {
+    color: var(--text-color);  /* <-- Bu değeri güncelledim */
+    background-color: var(--bg-color);
+    transition: all 0.3s ease-in-out;
+
+    &.dark {
+        --bg-color: #000;
+        --text-color: #fff;
+        --text-color: #999;  /* <-- Bu değeri güncelledim */
+    }
+}
+
+.button-icon {
+    @include d-flex(row, center, center);
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--blue);  /* Varsayılan mavi rengi burada kullanın */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &.dark {
+        background-color: var(--dark-blue);  /* Siyah modunda mavi rengi burada kullanın */
+    }
+
+    &:hover {
+        background-color: #4053ff;  /* Fare imlecini üzerine getirildiğinde arka plan rengini değiştirir */
+    }
+}
