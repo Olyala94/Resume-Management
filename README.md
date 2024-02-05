@@ -1,15 +1,12 @@
-# Resume Management Projesi
+# Resume Management Project
 
-Bu proje, React 18, ASP.NET Core 7 WebAPI, TypeScript ve Entity Framework Core kullanılarak geliştirilmiş bir Resume Management uygulamasıdır. Kullanıcı arayüzü için MUI (Material-UI) framework'ü tercih edilmiştir.
+I built this project using React 18, ASP.NET Core 7 WebAPI, TypeScript, and Entity Framework Core. Additionally, the Material-UI framework was chosen for the user interface design.
 
-## Proje Özellikleri
+## 🚀Project Overview:
 
-- Yeni şirket eklemek için kullanılan bir form ekranı.
-- Form validasyonları ve kullanıcı dostu hata mesajları.
-- HTTP istekleri için özel bir modül kullanımı.
-- Sayfa yönlendirmeleri için React Router kullanımı.
+It includes features such as viewing companies, adding new companies, and creating job positions.
 
-## Kullanılan Teknolojiler
+## ⚙️Technologies Used:
 
 - React 18
 - ASP.NET Core 7 WebAPI
